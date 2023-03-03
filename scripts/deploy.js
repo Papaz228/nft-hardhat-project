@@ -9,6 +9,7 @@ async function main() {
   const myNFT = await MyNFT.deploy();
   await myNFT.deployed();
   console.log("Contract address ",myNFT.address)
+  await this.myNFT.mintMyNFT(this.owner, {value: ethers.utils.parseEther("0.01")});
 }
 
 main()
