@@ -7,8 +7,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract MyNFT is ERC721Enumerable, Ownable {
     using Strings for uint256;
     uint256 maxSupply = 1000;
-    uint256 cost = 0.01 ether;
-    string baseURI = "";
+    uint256 cost = 0.00000000001 ether;
+    string baseURI = "ipfs://QmYAiRCT8kW9si9FRzrkiGo5S5rDV5uzuw41er6vQgraDT/";
 
     constructor() ERC721("MyNFT", "MYNFT") {}
 

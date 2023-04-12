@@ -10,9 +10,13 @@ const GOERLI_PRIVATE_KEY = "YOUR OWN PRIVATE KEY HERE";
 module.exports = {
   solidity: "0.8.17",
   networks: {
-    goerli: {
-      url: `https://eth-goerli.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
-      accounts: [process.env.GOERLI_PRIVATE_KEY]
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
+      accounts: [process.env.MUMBAI_PRIVATE_KEY]
     },
-  }
+  },
+  etherscan: {
+    apiKey: "SM17I4QGAGE51ZPNZ91QZ51NSEGMEKAS43",
+  },
+
 };
